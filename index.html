@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link href="css-circular-prog-bar.css" rel="stylesheet">
+    
+
+</head>
+<body>
+    
+    <div class="sidenav"> 
+        <div class="text-center">
+            <div class="first_part d-flex flex-column justify-content-start">
+                <img src="./blogo.png" alt="logo" class=" logo-img">
+               
+           </div>
+       
+            <div class="nav_items">
+                <a href="#">
+                    <div class="" id="search">
+                          <i class="fa-solid fa-magnifying-glass search_icon" onclick="fill_search()"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="" id="home" >
+                         <i class="fa-solid fa-house icon" onclick="fill_home()"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="" id="inbox">
+                        <i class="fas fa-inbox icon" onclick="fill_inbox()"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="" id="tasks">
+                        <i class="fas fa-tasks icon" onclick="fill_tasks()"></i>
+                    </div>
+                </a>
+                <a href="#" >
+                    <div class="" id="user">
+                        <i class="fa-solid fa-user icon" onclick="fill_user()"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+        
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-5 col-lg-3 first_container justify-content-start">
+                <div class="profile d-flex flex-row justify-content-start">
+                    <div>
+                        <img src="profile1.jpg" alt="profile_pic" class="profile_pic ">
+                    </div>
+                    <div class="pt-1"> 
+                        <h1 class="profile_head  col-lg-12">Hi Mike,</h1>
+                        <p class="profile_label col-lg-12">welcome back.</p>
+                    </div>
+                </div>
+                    <p class="sub_head col-lg-12">Today</p>
+                    <p class="today_earnings col-lg-12">$19,892<br><span class="sub_para">Account Balance</span></p>
+                    <div class="amount_container">
+                    <p class="amount col-lg-12 col-6">$4,000 <br><span class="sub_para">Year-to-Date Contributions</span></p>
+                    <p class="amount col-6">$1,892 <br><span class="sub_para">Total Interest</span></p>
+                </div>
+                <select name="language" id="language" class="dropdown col-12 col-lg-6">
+                    <option value="javascript">Yes</option>
+                    <option value="python">NO</option>
+                    <option value="Iwantto" selected>I want to</option>
+                </select>
+                  <h3 class="sub_head col-lg-12">Recent Transactions</h3>
+                  <p class="sub_para col-lg-12">2020-08-07 <br><span class="transacton">WIthdrawl Transfer to Bank-XXX11</span></p>
+                  <p class="sub_para col-lg-12">2020-07-21 <br><span class="transacton">WIthdrawl Transfer to Bank-XXX11</span></p>
+                  <p class="sub_para col-lg-12">2020-07-16 <br><span class="transacton">WIthdrawl Transfer to Bank-XXX11</span></p>
+            </div>
+            <div class="col-12 col-lg-6 col-sm-12 col-md-6  justify-content-center second_container">
+                <h1 class="sub_head sub  col-12 col-lg-6">Retirement Income<br><span class="second_head">Starting Year 2056</span></h1>
+               <div class=" goals_container">
+                    <div class="col-12 col-lg-4">
+                        <h1 class="second_head ">$300,000<br><span class="sub_para">My Goal</span></h1>
+                        <hr class="border_class">
+                    </div>
+                    <div class="goals d-flex flex-row justify-content-start ">
+                        <div class="col-6 col-md-4 col-lg-12">
+                            <h1 class="second_head">59% <br><span class="sub_para">Goal Achieved</span></h1>
+                            <hr class="border_class">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-10">
+                            <h1 class="second_head ">$300 <br><span class="sub_para">Est.Monthly Income</span></h1>
+                            <hr class="border_class">
+                        </div>
+                    </div>
+               </div>
+               
+               <p class="sub_head col-lg-12">Contributions Overtime</p>
+               <div class="wrapper">
+                <canvas id="myChart"></canvas>
+                </div>
+               
+                <p class="sub_head col-lg-12">How do I compare my peers?<br><span class="sub_para" >These numbers represent current goal achievement</span></p>
+                <div class=" peers_container">
+                    <div class="d-flex flex-column col-12  col-lg-6">
+                        <div class="d-flex flex-row ">
+                            <p class="transacton peers">Age:</p>
+                            <select name="language" id="language" class="dropdown2 " style="width:150px ;">
+                                <option value="40">Under 40</option>
+                                <option value="20">Under 20</option>
+                                <option value="Iwantto" selected>Under 30</option>
+                            </select>
+                        </div>
+                        
+                        <div class="d-flex flex-row ">
+                            <p class="transacton peers">Salary:</p>
+                            <select name="language" id="language" class="dropdown2 " style="width:140px ;">
+                                <option value="10-20">k 10 - k 20</option>
+                   \index.html             <option value="20-30" selected>k 20 - k 30</option>
+                                <option value="30-40">k 30 - k 40</option>
+                            </select>
+                        </div>
+                        <div class="d-flex flex-row ">
+                            <p class="transacton peers">Gender:</p>
+                            <select name="language" id="language" class="dropdown2 " style="width:135px ;">
+                                <option value="male" selected>Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Transgender</option>
+                            </select>
+                            
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center col-12 col-md-6 col-lg-6">
+                        <div class="progress-bar-container "> 
+                            <div class="progress-bar average">
+                                 <progress id="average" min="0" max="100" value="92"></progress>
+                            </div>
+                            <h2>
+                                <label for="average" class="label">Average</label>
+                            </h2>
+                        </div>
+                        
+                        <div class="progress-bar-container">
+                            <div class="progress-bar top">
+                                <progress id="top" min="0" max="100" value="87"></progress>
+                            </div>
+                            <h2>
+                                <label for="top" class="label">Top</label>
+                            </h2>
+                        </div>
+                        
+                        <div class="progress-bar-container">
+                            <div class="progress-bar me">
+                                    <progress id="me" min="0" max="100" value="59"></progress>
+                            </div>
+                            <h2>
+                                <label for="me" class="label">Me</label>
+                            </h2>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 third_container">
+                <div class="ret_strategy  mt-4 mb-3 ">
+                    <h1 class="second_head mt-3 col-lg-12">Retirement Strategy</h1>
+                    <p class="transacton col-lg-12">Employee Contribution</p>
+                    <div class="slider mb-3 col-lg-12">
+                        <input type="range" value="50%" min="1%" max="100%" oninput="this.nextElementSibling.value = this.value + '%'">
+                        <output>50%</output>
+                    </div>
+                    <p class="transacton col-lg-12">Retirement Age</p>
+                    <div class="slider mb-3 col-lg-12">
+                        <input type="range" value="50" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+                        <output>50%</output>
+                    </div>
+                    <hr class="line col-lg-10">
+                    <div class=" d-flex flex-row justify-content-start col-lg-12">
+                        <p class="transacton ">Employer Contribution</p>
+                        <p class="transacton interest">8.4%</p>
+                    </div>
+                    <div class=" d-flex flex-row justify-content-start col-lg-12">
+                        <p class="transacton">Interest Rate</p>
+                        <p class="transacton interest1">5%</p>
+                    </div>
+                    <button class="update_button col-lg-12">Update </button>
+                    <p class="help_docs">View Help Docs ></p>
+                </div>
+                <div class="housing_advance">
+                    <p class="housing_para">Are you considering a<br><span class="sub_head">Housing Advance?</span></p>
+                    <p class="sub_para margin">Limited time reduced internet</p>
+                    <a href="" class="help_docs text-left margin">Learn More ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
